@@ -1,0 +1,61 @@
+$main-color: #FF6060;
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 372px);
+    justify-content: center;
+}
+
+.error_h1, .error_p, .error_a {
+    color: $main-color;
+    text-align: center;
+}
+
+.error_h1 {
+    font-weight: 700;
+    font-size: 288px;
+    margin: 0;
+}
+
+.error_p {
+    font-size: 36px;
+    margin: 0 auto 70px auto;
+}
+
+.error_a {
+    margin: 0 0 80px 0;
+}
+
+.error_a a{
+    font-size: 18px;
+    color: $main-color;
+}
+
+@media screen and (max-width: 1200px) {
+    .error_p {
+        width: 570px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .error__container {
+        min-height: calc(100vh - 302px);
+    }
+
+    .error_h1 {
+        font-size: 96px;
+        margin: 100px 0 100px 0;
+    }
+
+    .error_a {
+        margin: 0 0 125px 0;
+    }
+
+    .error_p {
+        font-size: 18px;
+        margin: 0 auto 120px auto;
+        width: 300px;
+    }
+}

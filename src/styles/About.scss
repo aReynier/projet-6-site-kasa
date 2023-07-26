@@ -1,0 +1,36 @@
+$main-color: #FF6060;
+$empty-background: grey;
+
+h1 {
+    color: $main-color;
+}
+
+.aboutTitle {
+    color: white;
+    font-size: 24px;
+    margin: 2px 0;
+    font-weight: 500;
+}
+
+.about_content {
+    flex-grow: 1;
+}
+
+.about__banner {
+    margin-bottom: 30px;
+    height: 225px;
+    display: flex;
+    background-color: $empty-background;
+    border-radius: 25px;
+}
+
+.about__collapsible {
+    margin: 0 auto 30px auto;
+    max-width: 1025px;
+}
+
+@media screen and (max-width: 768px) {
+    .about__banner, .about__collapsible {
+        margin-bottom: 17px;
+    }
+}

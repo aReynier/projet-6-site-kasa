@@ -1,0 +1,28 @@
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 210px;
+    overflow-x: hidden;
+}
+
+footer img {
+    padding: 65px 0 15px 0;
+    width: 122px;
+}
+
+footer p {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    footer p {
+        font-size: 12px;
+        width: 100px;
+        margin: auto;
+    }
+
+    footer img {
+        padding: 65px 0 10px 0;
+    }
+}
