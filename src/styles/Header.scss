@@ -1,54 +1,53 @@
 $main-color: #FF6060;
 
-header {
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 47px auto;
 }
 
-header img {
+.header__image {
     width: 210px;
 }
 
-header nav {
+.header__navigation {
     display: flex;
     align-items: center;
 }
 
-header nav a {
+.header__list {
+    display: flex;
+    padding: 0;
+}
+
+.header__list--element {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__link {
     margin: 0 0 0 60px;
     color: $main-color;
     text-decoration: none;
     font-size: 24px;
 }
 
-header nav a:hover {
+.header__link:hover {
     text-decoration: underline;
 }
-
-header ul {
-    display: flex;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 @media screen and (max-width: 768px) {
-    header {
+    .header {
         margin: 20px auto;
         text-transform: uppercase;
     }
 
-    header img {
+    .header__image {
         width: 145px;
     }
 
-    header nav a {
+    .header__link {
         font-size: 12px;
         margin: 0 0 0 25px;
     }

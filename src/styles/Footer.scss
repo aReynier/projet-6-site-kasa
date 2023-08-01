@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: black;
     color: white;
     text-align: center;
@@ -6,23 +6,23 @@ footer {
     overflow-x: hidden;
 }
 
-footer img {
+.footer__image {
     padding: 65px 0 15px 0;
     width: 122px;
 }
 
-footer p {
+.footer__paragraph {
     font-size: 24px;
 }
 
 @media screen and (max-width: 768px) {
-    footer p {
+    .footer__image {
+        padding: 65px 0 10px 0;
+    }
+
+    .footer__paragraph {
         font-size: 12px;
         width: 100px;
         margin: auto;
-    }
-
-    footer img {
-        padding: 65px 0 10px 0;
     }
 }

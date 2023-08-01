@@ -1,0 +1,62 @@
+$main-color: #FF6060;
+$secondary-color: #F6F6F6;
+$empty-background: grey;
+
+.collapsible {
+    display: flex;
+    flex-direction:column;
+    background-color: $secondary-color;
+    border-radius: 10px;
+}
+
+.collapsible__button {
+    background-color: $main-color;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 17px 10px 17px;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+    font-size: 24px;
+    z-index: 2;
+}
+
+.collapsible__arrow{
+    font-size: 32px;
+    rotate: -180deg;
+    transition-duration: 300ms;
+}
+
+.collapsible__container {
+    overflow: hidden;
+    transition: height ease 0.3s;
+    z-index: 1;
+}
+
+.collapsible__content {
+    border-radius: 10px;
+    translate: 0 0px;
+    transition: translate ease 0.3s;
+}
+
+@media screen and (max-width: 965px) {
+    .collapsible__button {
+        font-size: 18px;
+        padding: 10px 12px 10px 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collapsible__button {
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+    .collapsible__arrow {
+        font-size: 20px;
+    }
+}

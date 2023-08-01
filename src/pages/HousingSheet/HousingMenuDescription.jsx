@@ -1,16 +1,23 @@
-import Collapsible from '../../components/Collapsible';
+import Collapsible from '../../components/Collapsible/Collapsible'
 
 const HousingMenuDescription = (props) => {
-    const { data } = props;
+    const { data } = props
 
-    return (             
-        <div className="housing__description"> 
+    return (
+        <div className="housing__description">
             <div className="housing__description--container">
                 <Collapsible label="Description">
-                    { data.description? <p className="housing__description--p">{data.description}</p> : "loading..."} 
-            </Collapsible>
+                    {data.description ? (
+                        <p className="housing__description--p">
+                            {data.description}
+                        </p>
+                    ) : (
+                        'loading...'
+                    )}
+                </Collapsible>
             </div>
-        </div>)
+        </div>
+    )
 }
 
 export default HousingMenuDescription

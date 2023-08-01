@@ -126,41 +126,7 @@ $empty-background: grey;
     display: flex;
     flex-direction: column;
 }
-
-.housing__details--button {
-    background-color: $main-color;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 17px 10px 17px;
-    border-radius: 10px;
-    color: white;
-    border-style: none;
-    font-size: 24px;
-    z-index: 2;
-}
-
-.housing_arrow{
-    font-size: 32px;
-    rotate: -180deg;
-    transition-duration: 300ms;
-}
-
-.flex {
-    display: flex;
-    flex-direction:column;
-    background-color: $secondary-color;
-    border-radius: 10px;
-}
-
-.content-parent {
-    overflow: hidden;
-    transition: height ease 0.3s;
-    z-index: 1;
-}
-    
+   
 .content-show {
     height: 100px;
 }
@@ -182,12 +148,6 @@ $empty-background: grey;
 
 .fa-star-granted {
     color: $main-color;
-}
-
-.p_description_detail {
-    border-radius: 10px;
-    translate: 0 0px;
-    transition: translate ease 0.3s;
 }
 
 .housing__description--p, .housing__equipment--p {
@@ -215,13 +175,10 @@ $empty-background: grey;
 
 .housing__equipment--p {
     margin: 3.5px 0;
+    list-style: none;
 }
 
 @media screen and (max-width: 965px) {
-    .housing__details--button {
-        font-size: 18px;
-        padding: 10px 12px 10px 12px;
-    }
 
     .housing__description--p, .housing__equipment--p {
         font-size: 18px;
@@ -257,12 +214,6 @@ $empty-background: grey;
         margin-bottom: 25px;
     }
 
-    .housing__details--button {
-        font-size: 13px;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
     .housing__informations--title {
         font-size: 18px;
         line-height: 1.4;
@@ -284,10 +235,6 @@ $empty-background: grey;
     .housing__banner--arrow {
         font-size: 28px;
         margin: 5px;
-    }
-
-    .housing_arrow {
-        font-size: 20px;
     }
 
     .housing__description--p{

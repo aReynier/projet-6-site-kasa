@@ -7,33 +7,33 @@ $main-color: #FF6060;
     justify-content: center;
 }
 
-.error_h1, .error_p, .error_a {
+.error__title, .error__paragraph, .error__link--container {
     color: $main-color;
     text-align: center;
 }
 
-.error_h1 {
+.error__title {
     font-weight: 700;
     font-size: 288px;
     margin: 0;
 }
 
-.error_p {
+.error__paragraph {
     font-size: 36px;
     margin: 0 auto 70px auto;
 }
 
-.error_a {
+.error__link--container {
     margin: 0 0 80px 0;
 }
 
-.error_a a{
+.error__link{
     font-size: 18px;
     color: $main-color;
 }
 
 @media screen and (max-width: 1200px) {
-    .error_p {
+    .error__paragraph {
         width: 570px;
     }
 }
@@ -44,16 +44,16 @@ $main-color: #FF6060;
         min-height: calc(100vh - 302px);
     }
 
-    .error_h1 {
+    .error__title {
         font-size: 96px;
         margin: 100px 0 100px 0;
     }
 
-    .error_a {
+    .error__link--container {
         margin: 0 0 125px 0;
     }
 
-    .error_p {
+    .error__paragraph {
         font-size: 18px;
         margin: 0 auto 120px auto;
         width: 300px;
