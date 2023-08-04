@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { React, useEffect, useState } from 'react'
 import '../../styles/HousingSheet.scss'
 import HousingMenuDescription from './HousingMenuDescription'
 import HousingMenuEquipment from './HousingMenuEquipment'

@@ -20,8 +20,10 @@ $empty-background: grey;
     border-radius: 10px;
     color: white;
     border-style: none;
-    font-size: 24px;
     z-index: 2;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 
 .collapsible__arrow{

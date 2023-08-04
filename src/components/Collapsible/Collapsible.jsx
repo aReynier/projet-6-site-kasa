@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { React, useState, useEffect, useRef } from 'react'
 import '../../styles/Collapsible.scss'
 
 const Collapsible = (props) => {
@@ -14,7 +14,6 @@ const Collapsible = (props) => {
         if (contentRef.current !== tracker) {
             setTracker(contentRef.current)
         }
-        console.log(contentRef.current.scrollHeight)
     }, [tracker])
 
     const rotate = contentRef.current?.rotate || 0 + 'deg'

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { React, useState } from 'react'
 
 const CarouselBanner = (props) => {
     const [count, updateCount] = useState(1)
@@ -7,11 +7,11 @@ const CarouselBanner = (props) => {
     return (
         <div className="housing__banner">
             <img
-                className="housing__banner--image"
+                className="housing__banner_image"
                 src={data.pictures[count - 1]}
                 alt={'aperçu de ' + data.title}
             />
-            <div className="housing__banner--div">
+            <div className="housing__banner_div">
                 {data.pictures.length > 1 && (
                     <i
                         onClick={() =>
@@ -21,11 +21,11 @@ const CarouselBanner = (props) => {
                                     : count - 1
                             )
                         }
-                        className="housing__banner--arrow fa-solid fa-angle-left"
+                        className="housing__banner_arrow fa-solid fa-angle-left"
                     ></i>
                 )}
                 {data.pictures.length > 1 && (
-                    <p className="housing__banner--counter">
+                    <p className="housing__banner_counter">
                         {' '}
                         {count}/{data.pictures.length}{' '}
                     </p>
@@ -37,7 +37,7 @@ const CarouselBanner = (props) => {
                                 count === data.pictures.length ? 1 : count + 1
                             )
                         }
-                        className="housing__banner--arrow fa-solid fa-angle-right"
+                        className="housing__banner_arrow fa-solid fa-angle-right"
                     ></i>
                 )}
             </div>

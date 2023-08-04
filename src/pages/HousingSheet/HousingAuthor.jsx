@@ -1,30 +1,34 @@
+import React from 'react'
 import StarsLoading from './StarsLoading'
 
 const HousingAuthor = (props) => {
     const { data } = props
 
     return (
-        <div className="housing__author--container">
+        <div className="housing__author_container">
             <div className="housing__author">
                 <div>
                     <div>
                         {data.host &&
                             data.host.name.split(' ').map((name) => (
-                                <p className="housing__author--p" key={name}>
+                                <p
+                                    className="housing__author_paragraph"
+                                    key={name}
+                                >
                                     {name}
                                 </p>
                             ))}
                     </div>
                 </div>
-                <div className="housing__author--frame">
+                <div className="housing__author_frame">
                     <img
-                        className="housing__author--image"
+                        className="housing__author_image"
                         src={data.host?.picture}
                         alt="propriétaire du logement"
                     />
                 </div>
             </div>
-            <div className="housing__author--stars">
+            <div className="housing__author_stars">
                 <StarsLoading data={data} />
             </div>
         </div>

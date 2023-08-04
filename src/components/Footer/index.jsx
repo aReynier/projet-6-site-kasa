@@ -1,3 +1,4 @@
+import React from 'react'
 import kasa_logo_white from '../../assets/kasa_logo_white.png'
 import '../../styles/Footer.scss'
 

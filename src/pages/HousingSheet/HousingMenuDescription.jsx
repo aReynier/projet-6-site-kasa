@@ -1,3 +1,4 @@
+import React from 'react'
 import Collapsible from '../../components/Collapsible/Collapsible'
 
 const HousingMenuDescription = (props) => {
@@ -5,10 +6,10 @@ const HousingMenuDescription = (props) => {
 
     return (
         <div className="housing__description">
-            <div className="housing__description--container">
+            <div className="housing__description_container">
                 <Collapsible label="Description">
                     {data.description ? (
-                        <p className="housing__description--p">
+                        <p className="housing__description_paragraph">
                             {data.description}
                         </p>
                     ) : (

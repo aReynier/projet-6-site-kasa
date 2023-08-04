@@ -1,3 +1,5 @@
+import React from 'react'
+
 const StarsLoading = (props) => {
     const { data } = props
 

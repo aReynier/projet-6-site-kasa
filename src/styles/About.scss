@@ -21,8 +21,39 @@ $empty-background: grey;
     max-width: 1025px;
 }
 
+//about collapsible variant style of other collapsibles
+.about__collapsible button {
+     font-size: 24px;
+     border-radius: 5px;
+}
+
+.about__paragraph {
+    color: $main-color;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 20px 25px 20px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 965px) {
+    .about__paragraph {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .about__banner, .about__collapsible {
         margin-bottom: 17px;
+    }
+
+    //about collapsible variant style of other collapsibles
+    .about__collapsible button {
+        font-size: 13px;
+    }
+
+    .about__paragraph {
+        font-size: 12px;
+        padding: 15px 18px 20px 18px;
     }
 }
