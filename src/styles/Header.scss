@@ -34,9 +34,10 @@ $main-color: #FF6060;
     font-size: 24px;
 }
 
-.header__link:hover {
+.header__link:hover, .header__link--active {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 768px) {
     .header {
         margin: 20px auto;
